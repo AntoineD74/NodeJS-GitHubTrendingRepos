@@ -1,8 +1,16 @@
-# node-js-getting-started
+# NodeJS-GitHubTrendingRepos
 
-A barebones Node.js app using [Express 4](http://expressjs.com/).
+Projet scolaire, Majeure NodeJS - Développé par Antoine Dancre
 
-This application supports the [Getting Started with Node on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs) article - check it out.
+Créé à partir du repo node-js-getting-started, utilise Heroku et Redis.
+
+Application déployée sur Heroku à l'addresse [https://guarded-inlet-19985.herokuapp.com/](https://guarded-inlet-19985.herokuapp.com/)
+
+Fonctionnalités :
+- Récupère les 100 repos GitHub ayant le plus d'étoiles et les stocke en cache via redis
+- Authentification via l'api GitHub
+- Possibilité de starrer un repo une fois authentifié
+
 
 ## Running Locally
 
@@ -17,6 +25,8 @@ $ npm start
 
 Your app should now be running on [localhost:5000](http://localhost:5000/).
 
+You need to have a redis-server running locally to make this work.
+
 ## Deploying to Heroku
 
 ```
@@ -27,6 +37,8 @@ $ heroku open
 or
 
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+
+Don't forget to configure the Heroku Redis addon to make this work.
 
 ## Documentation
 
