@@ -5,5 +5,9 @@
 }
 
 html [type="button"]{
-  -webkit-appearance: button-bevel;
+  -webkit-appearance: button-bevel!important;
+}
+
+.full-size-height{
+  height: calc(100vh - 64px);
 }
