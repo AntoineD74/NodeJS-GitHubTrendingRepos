@@ -15,7 +15,7 @@
       </a>
       <h1><i class="material-icons large">trending_up</i> Github Trending Repositories</h1>
       <p>This app lists the 100 Top Trending GitHub Repositories.</p>
-      <a type="button" class="waves-effect waves-light btn purple" href="/refresh"><i class="material-icons left">refresh</i> Refresh the list</a>
+      <a type="button" class="waves-effect waves-light btn purple" href="/refresh"><i class="material-icons left">refresh</i>Refresh the list</a>
     </div>
   </div>
 
@@ -38,8 +38,8 @@
             </div> <!-- row -->
           </div>
           <div class="card-action">
-            <a href="<%= repo.html_url %>"><i class="material-icons">launch</i> Go to GitHub</a>
-            <a onclick="rate('<%= repo.full_name %>')"><i class="material-icons">star</i> Star - <%= repo.stargazers_count %> stars</a>
+            <a href="<%= repo.html_url %>"><i class="material-icons left">launch</i>Go to GitHub</a>
+            <a onclick="rate('<%= repo.full_name %>')"><i class="material-icons left">star</i>Star - <%= repo.stargazers_count %> stars</a>
           </div>
         </div> <!-- card -->
       <% }); %>
@@ -59,7 +59,7 @@
         },
         error: function(error){
           //Informs user of error
-          M.toast({html: 'Rating failed !'})
+          M.toast({html: 'Rating failed, try logging in !'})
         }
       });
 
