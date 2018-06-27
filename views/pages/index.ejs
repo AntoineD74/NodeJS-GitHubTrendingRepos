@@ -38,8 +38,12 @@
             </div> <!-- row -->
           </div>
           <div class="card-action">
-            <a href="<%= repo.html_url %>"><i class="material-icons left">launch</i>Go to GitHub</a>
-            <a onclick="rate('<%= repo.full_name %>')"><i class="material-icons left">star</i>Star - <%= repo.stargazers_count %> stars</a>
+            <div class="inline-div">
+              <a href="<%= repo.html_url %>"><i class="material-icons left">launch</i>Go to GitHub</a>
+            </div>
+            <div class="inline-div">
+              <a onclick="rate('<%= repo.full_name %>')"><i class="material-icons left">star</i>Star - <%= repo.stargazers_count %> stars</a>              
+            </div>
           </div>
         </div> <!-- card -->
       <% }); %>
