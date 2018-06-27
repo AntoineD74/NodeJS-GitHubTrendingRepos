@@ -1,0 +1,18 @@
+<nav>
+  <div class="nav-wrapper purple lighten-1">
+    <ul class="left">
+      <li class="active">
+        <a>Developped by Antoine Dancre</a>
+      </li>
+    </ul>
+    <ul class="right">
+      <li>
+        <% if (!logged) { %>
+          <a href="/authenticate"><span></span> S'authentifier via GitHub</a>
+        <% } else { %>
+          <a href="/logout"> Se déconnecter</a>
+        <% } %>
+      </li>
+    </ul>
+  </div>
+</nav>
