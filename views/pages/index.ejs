@@ -14,8 +14,8 @@
         <img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png">
       </a>
       <h1>Trending Repositories of GitHub</h1>
-      <p>This app lists the 100 Top Trending GitHub Repositories.</p>
-      <a type="button" class="waves-effect waves-light btn" href="/refresh"><span class="glyphicon glyphicon-flash"></span> Refresh the list</a>
+      <p>This app lists the 100 Top Trending <i class="material-icons medium">trending_up</i> GitHub Repositories.</p>
+      <a type="button" class="waves-effect waves-light btn" href="/refresh"><i class="material-icons">refresh</span> Refresh the list</a>
     </div>
   </div>
 <div class="container">
@@ -29,7 +29,7 @@
               <img class="avatar-img" src="<%= repo.owner.avatar_url %>" />
             </div>
             <div class="col s11">
-              <span class="card-title"><%= repo.name %> - <%= repo.full_name %><span class="badge purple">4 stars</span></span>
+              <span class="card-title"><%= repo.name %> - Created by <%= repo.owner.login %></span>
               <p>
                 <%= repo.description %>
               </p>
@@ -38,7 +38,7 @@
         </div>
         <div class="card-action">
           <a href="<%= repo.html_url %>"><i class="material-icons">launch</i> Go to GitHub</a>
-          <a onclick="rate('<%= repo.full_name %>')"><i class="material-icons">star</i> Rate - <%= repo.stargazers_count %> stars</a>
+          <a onclick="rate('<%= repo.full_name %>')"><i class="material-icons">star</i> Star - <%= repo.stargazers_count %> stars</a>
         </div>
 
       </div>
