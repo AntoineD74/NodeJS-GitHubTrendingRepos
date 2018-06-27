@@ -35,7 +35,6 @@
               </p>
             </div>
           </div>
-
         </div>
         <div class="card-action">
           <a href="<%= repo.html_url %>"><i class="material-icons">launch</i> Go to GitHub</a>
@@ -56,11 +55,11 @@
         method: "GET",
         success: function(response){
           //Informs user of success
-          alert("Rating worked !");
+          M.toast({html: 'Rating worked!'})
         },
         error: function(error){
           //Informs user of error
-          alert("Rating failed !");
+          M.toast({html: 'Rating failed !'})
         }
       });
 
