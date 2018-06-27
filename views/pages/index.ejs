@@ -13,13 +13,13 @@
       <a href="/" class="lang-logo">
         <img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png">
       </a>
-      <h1><i class="material-icons medium">trending_up</i> Trending Repositories of GitHub</h1>
+      <h1><i class="material-icons large">trending_up</i> Github Trending Repositories</h1>
       <p>This app lists the 100 Top Trending GitHub Repositories.</p>
-      <a type="button" class="waves-effect waves-light btn" href="/refresh"><i class="material-icons">refresh</i> Refresh the list</a>
+      <a type="button" class="waves-effect waves-light btn purple" href="/refresh"><i class="material-icons left">refresh</i> Refresh the list</a>
     </div>
   </div>
 <div class="container">
-  <hr>
+
   <div class="row">
     <% repos.forEach(function(repo) { %>
       <div class="card">
@@ -40,7 +40,6 @@
           <a href="<%= repo.html_url %>"><i class="material-icons">launch</i> Go to GitHub</a>
           <a onclick="rate('<%= repo.full_name %>')"><i class="material-icons">star</i> Star - <%= repo.stargazers_count %> stars</a>
         </div>
-
       </div>
     <% }); %>
   </div> <!-- row -->
